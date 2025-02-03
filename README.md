@@ -6,7 +6,7 @@
 
 <a href="https://wihi1131.github.io/Machine-Learning-Project/Introduction">Introduction</a>
 
-<a href="https://wihi1131.github.io/Machine-Learning-Project/Data Prep/EDA">Data Prep/EDA</a>
+<a href="https://wihi1131.github.io/Machine-Learning-Project/Data_Prep_and_EDA">Data Prep and EDA</a>
 
 <a href="https://wihi1131.github.io/Machine-Learning-Project/PCA">PCA</a>
 
