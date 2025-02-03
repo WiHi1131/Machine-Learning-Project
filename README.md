@@ -22,4 +22,4 @@
 
 <a href="https://wihi1131.github.io/Machine-Learning-Project/Regression">Regression</a>
 
-<a href="https://wihi1131.github.io/Data-Mining-Project/Conclusions">Conclusions</a>
+<a href="https://wihi1131.github.io/Machine-Learning-Project/Conclusions">Conclusions</a>
