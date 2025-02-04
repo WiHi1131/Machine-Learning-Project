@@ -8,7 +8,7 @@ Though the game is difficult for new players to learn, and even more difficult t
   <img src = "images/tft_board.png" title = "An Example of a TFT Board" alt = "TFT Board Example">
   <div>
     <p>
-      This is an example of a TFT Board. Notice the units placed on the board, and a menu on the bottom part of the screen showing new units for purchase
+      <b>This is an example of a TFT Board. Notice the units placed on the board, and a menu on the bottom part of the screen showing new units for purchase</b>
     </p>
   </div>
 </div>
