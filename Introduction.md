@@ -4,6 +4,16 @@ Teamfight Tactics (or TFT for short) is a game owned by the world-renowned game 
 
 Though the game is difficult for new players to learn, and even more difficult to master, like with any game the players have one desire: to come out on top. One key way that players with data science skills might be able to concoct an advantage is through analyzing data procured from Riot Games' Developer API. This API contains extensive data on TFT players and matches, including extremely detailed information on specific champions bought, gold spent, final placement, and much more. Though predicting player placement in a TFT game is a difficult task, and gathering enough of the extensive match data is no easy task, machine learning models, used smartly, may be able to aid in prediction of the outcomes of TFT games. This project will be an exploration in that endeavor. 
 
+<div>
+  <img src = "images/tft_board.png" title = "An Example of a TFT Board" alt = "TFT Board Example">
+  <div>
+    <p>
+      This is an example of a TFT Board. Notice the units placed on the board, and a menu on the bottom part of the screen showing new units for purchase
+    </p>
+  </div>
+</div>
+
+
 # Questions This Project Will Attempt to Answer
 1. Can remaining gold a player has at the time of their elimination be a useful feature in predicting final placement in a TFT game?
 2. Which traits within a player's team contribute most to predicting final placement?
