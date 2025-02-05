@@ -37,4 +37,24 @@ Data was gathered from the  <a href = "https://developer.riotgames.com/">Riot Ga
   </div>
 </div>
 
+# Data Before Cleaning 
+
+<div>
+  <img src = "images/data_1.PNG" title = "JSON Data 1" alt = "JSON Data 1">
+  <div>
+    <p>
+      <b>This shows one entry in the match_data.json file. Note the large amount of data for a single entry. We can see each entry has 8 participants and each participant can have many traits and many units, each with individual information</b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/data_2.PNG" title = "JSON Data 2" alt = "JSON Data 2">
+  <div>
+    <p>
+      <b>This shows more of a single JSON entry</b>
+    </p>
+  </div>
+</div>
+
 
