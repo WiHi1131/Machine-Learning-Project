@@ -57,4 +57,13 @@ Data was gathered from the  <a href = "https://developer.riotgames.com/">Riot Ga
   </div>
 </div>
 
+<div>
+  <img src = "images/data_3.PNG" title = "JSON Data 3" alt = "JSON Data 3">
+  <div>
+    <p>
+      <b>This image shows what information is inside each trait and unit.</b>
+    </p>
+  </div>
+</div>
+
 
