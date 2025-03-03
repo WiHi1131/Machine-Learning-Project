@@ -48,4 +48,19 @@ Principal Component Analysis, or PCA, is a means by which to reduce the complexi
   </div>
 </div>
 
+# Information Remaining
+
+When performing PCA in Python, we can output how much of the explained variance ratio is caputured by our principal components. This tells us how much of the total variance in the dataset is explained by each principal component. In other words, we can see how much information is retained when we reduce our dimensions. The image below shows how much of our information is kept by the principal components we have found for both two and three dimensions. 
+
+<div>
+  <img src = "images/info_remaining.PNG" title = "Explained Variance Ratios" alt = "Explained Variance Ratios">
+  <div>
+    <p>
+      <b>This is a screenshot of Python output showing how much of our explained variance ratio is explained by each Principal Component. We can see that the first principal component contains about 57.44% of the information we originally had in our full dataset. When we add the second principal component, cumulatively our dataset contains 75.05% of the information that it originally had. When we add a third principal component, our reduced dataset contains 90.88% of the information it had before conducting PCA. </b>
+    </p>
+  </div>
+</div>
+
+Overall, 75.05% of the information remains in the 2D dataset, and 90.88% of the information remains in the 3D dataset. 
+
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
