@@ -1,3 +1,5 @@
+<a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
+
 # Introduction 
 
 Teamfight Tactics (or TFT for short) is a game owned by the world-renowned game developer Riot Games. In October of 2024, the game had 33 million players, making it one of the most popular games in the world [1]. The game is a flagship for the genre of 'auto-battlers', which is a "strategy game where you recruit armies that battle automatically" [2]. Eight human opponents play in the same game, and fight until there is only one left standing. The game is heavily dependent on acquiring controlling resources, namely gold, the in-game currency used to purchase champions or heroes that are placed on a board vaguely reminiscent of a chess board, that then battle other players' champions in a series of 1-v-1 rounds. Whichever player has the strongest team emerges triumphant, with the losing player losing health, or their resource that keeps them alive in the game. Any player that is eliminated to 0 health loses the game. 
@@ -30,3 +32,6 @@ Though the game is difficult for new players to learn, and even more difficult t
 - [1] 1v9. (2024, October 19). TFT Player count and statistics 2024. https://1v9.gg/blog/tft-player-count
 
 - [2] Cox, M. (2019, August 1). Spawn Point: What on earth is an auto battler? Rock Paper Shotgun. https://www.rockpapershotgun.com/what-is-an-auto-battler
+
+
+<a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
