@@ -43,6 +43,15 @@ For our clustering algorithms, we will use the same dataset that was used for <a
   </div>
 </div>
 
+<div>
+  <img src = "images/PCA_3D_Data.PNG" title = "PCA 3D Data Snippet" alt = "PCA 3D Data Snippet">
+  <div>
+    <p>
+      <b>This is the data that clustering will be performed on, after having performed <a href = "https://wihi1131.github.io/Machine-Learning-Project/PCA">PCA</a> to reduce the normalized data to three dimensions. Link to data: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/PCA_3D_Data.csv">PCA Clustering Data</a></b>
+    </p>
+  </div>
+</div>
+
 
 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
