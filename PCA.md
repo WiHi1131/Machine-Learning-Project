@@ -63,4 +63,15 @@ When performing PCA in Python, we can output how much of the explained variance 
 
 Overall, 75.05% of the information remains in the 2D dataset, and 90.88% of the information remains in the 3D dataset. 
 
+If we want to increase our dimensions until we retain at least 95% of the original information, we would only need to add one additional principal component. The image below gives our cumulative explained variance ratio when we use PCA to get four principal components: 
+
+<div>
+  <img src = "images/PCA_4D.PNG" title = "PCA 4D Output" alt = "PCA 4D Output">
+  <div>
+    <p>
+      <b>This is the output when we conduct PCA with 4 principal components. We can see that adding a fourth principal component means that 98.40% of the information from the original dataset is retained, which eclipses the goal of retaining at least 95% of the original dataset. </b>
+    </p>
+  </div>
+</div>
+
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
