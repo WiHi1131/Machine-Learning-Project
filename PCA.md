@@ -17,7 +17,7 @@ Principal Component Analysis, or PCA, is a means by which to reduce the complexi
   <img src = "images/PCA_clean.PNG" title = "PCA Data" alt = "Cleaned PCA Data">
   <div>
     <p>
-      <b>This is the data that PCA will be performed on, after cleaning. Note that the "placement" column has been removed, and both non-quantitative columns have also been removed. Link to data: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/PRE_PCA.csv">Pre-PCA Data</a></b>
+      <b>This is the data that PCA will be performed on, after cleaning. Note that the "placement" column has been removed, and both non-quantitative columns have also been removed. Link to data: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/PCA.csv">Cleaned PCA Data</a></b>
     </p>
   </div>
 </div>
