@@ -34,6 +34,15 @@ For our clustering algorithms, we will use the same dataset that was used for <a
   </div>
 </div>
 
+<div>
+  <img src = "images/PCA_clean.PNG" title = "Cleaned Clustering Data" alt = "Cleaned Clustering Data">
+  <div>
+    <p>
+      <b>This is the data that clustering will be performed on, after cleaning. Note that the "placement" column has been removed, and both non-quantitative columns have also been removed. Link to data: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/PCA.csv">Cleaned Clustering Data</a></b>
+    </p>
+  </div>
+</div>
+
 
 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
