@@ -35,10 +35,10 @@ For our clustering algorithms, we will use the same dataset that was used for <a
 </div>
 
 <div>
-  <img src = "images/PCA_clean.PNG" title = "Cleaned Clustering Data" alt = "Cleaned Clustering Data">
+  <img src = "images/scaled_data.PNG" title = "Scaled Data" alt = "Scaled Data">
   <div>
     <p>
-      <b>This is the data that clustering will be performed on, after cleaning. Note that the "placement" column has been removed, and both non-quantitative columns have also been removed. Link to data: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/PCA.csv">Cleaned Clustering Data</a></b>
+      <b>This is the data that clustering will be performed on, after standardizing such that the mean of each column is 0 and the standard deviation of each column is 1 - this is also known as normalization. Link to data: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/scaled_clustering_data.csv">Scaled Clustering Data</a></b>
     </p>
   </div>
 </div>
