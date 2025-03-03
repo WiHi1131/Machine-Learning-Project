@@ -34,6 +34,8 @@ For our clustering algorithms, we will use the same dataset that was used for <a
   </div>
 </div>
 
+## Normalization
+
 <div>
   <img src = "images/scaled_data.PNG" title = "Scaled Data" alt = "Scaled Data">
   <div>
@@ -43,6 +45,8 @@ For our clustering algorithms, we will use the same dataset that was used for <a
   </div>
 </div>
 
+## PCA Reduction
+
 <div>
   <img src = "images/PCA_3D_Data.PNG" title = "PCA 3D Data Snippet" alt = "PCA 3D Data Snippet">
   <div>
@@ -51,6 +55,12 @@ For our clustering algorithms, we will use the same dataset that was used for <a
     </p>
   </div>
 </div>
+
+# Code and Results
+
+All code used can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/code/Clustering.ipynb">Code</a>
+
+## K-Means
 
 
 
