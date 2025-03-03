@@ -31,7 +31,7 @@ Principal Component Analysis, or PCA, is a means by which to reduce the complexi
 # Visualizations of the Data
 
 <div>
-  <img src = "images/PCA_2D_Vis.PNG" title = "PCA 2D" alt = "PCA 2D Plot">
+  <img src = "images/PCA_2D_Vis.png" title = "PCA 2D" alt = "PCA 2D Plot">
   <div>
     <p>
       <b>This is a scatterplot of the two principal components when PCA is performed on the data and the dimensions of the data are reduced to two. Note that data was scaled before PCA was performed.</b>
@@ -40,7 +40,7 @@ Principal Component Analysis, or PCA, is a means by which to reduce the complexi
 </div>
 
 <div>
-  <img src = "images/PCA_3D_Vis.PNG" title = "PCA 3D" alt = "PCA 3D Plot">
+  <img src = "images/PCA_3D_Vis.png" title = "PCA 3D" alt = "PCA 3D Plot">
   <div>
     <p>
       <b>This is a 3D plot of the three principal components remaining when PCA is performed on the data and dimensions are reduced to three.</b>
