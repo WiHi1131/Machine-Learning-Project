@@ -74,4 +74,17 @@ If we want to increase our dimensions until we retain at least 95% of the origin
   </div>
 </div>
 
+# Eigenvalues
+
+Eigenvalues are coefficients used as part of the linear transformation of the data during PCA. Essentially, they represent how much variance is in the data along each principal component. The largest eigenvalue explains the most variance, and is used for the first principal component, the second corresponds to the second principal component, and so forth. They are another way to express the amount of information we retain in the dataset by performing PCA. Below is an image showing our eigenvalues obtained through PCA and our top three eigenvalues: 
+
+<div>
+  <img src = "images/eigenvalues.PNG" title = "Eigenvalue output" alt = "Eigenvalue output">
+  <div>
+    <p>
+      <b>This is an image showing all eigenvalues obtained from PCA, and our top three by magnitude. </b>
+    </p>
+  </div>
+</div>
+
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
