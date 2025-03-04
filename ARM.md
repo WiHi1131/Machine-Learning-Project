@@ -96,7 +96,19 @@ The following images show the Top 15 rules found through ARM based on the metric
 
 The traits Bruiser, FormSwapper, and Cabal all seem to be highly associated with each other no matter which metric is used. 
 
+The below image is a visualization of the network of associations found with ARM. We can see more clearly the concrete rules that we found. Bruiser is associated with Cabal and Formswapper, Formswapper is further associated with Scrap and Martialist. Unassociated with any of these is the separate association of Ambassador and Warband. 
 
+<div>
+  <img src = "images/arm_network.png" title = "Association Rule Network" alt = "Association Rule Network">
+  <div>
+    <p>
+      <b>This visualization shows all the association rules found through mining</b>
+    </p>
+  </div>
+</div>
 
+# Conclusions
+
+We were able to create a dataset of "transactions" that contained traits used by any one player in a particular match of TFT, and through this data we were able to find solid association rules between some traits, as mentioned above in the Results section. These rules indicate traits that are frequently found together on one player's board in a game of TFT, and can give insight into common strategies players were using at the time the data was retrieved. In other words, players seem to often have units with the Bruiser trait and units with the FormSwapper trait on the same board, likely indicating that there is a strategic value in doing so, especially when considering the high rank of the players whose data has been analyzed. More analysis could be done to determine if these association rules also correlate with higher placement within a game. ARM has provided unique computationally-based insight into strategies adopted by TFT players. 
 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
