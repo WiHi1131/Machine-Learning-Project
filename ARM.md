@@ -65,6 +65,37 @@ Below is a snippet of our trait data transformed into transactional data.
 
 # Results
 
+The following images show the Top 15 rules found through ARM based on the metrics of support, confidence, and lift. The minimum support threshold and confidence threshold were both defined as 0.4, as this was the smallest threshold that generated at least 15 rules. 
+
+<div>
+  <img src = "images/top15_support.PNG" title = "Top 15 Support Rules" alt = "Top 15 Support Rules">
+  <div>
+    <p>
+      <b>This snippet shows the top 15 rules based on their support metric (note the support column values on the right)</b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/top15_confidence.PNG" title = "Top 15 Confidence Rules" alt = "Top 15 Confidence Rules">
+  <div>
+    <p>
+      <b>This snippet shows the top 15 rules based on their confidence metric (note the confidence column values on the right)</b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/top15_lift.PNG" title = "Top 15 Lift Rules" alt = "Top 15 Lift Rules">
+  <div>
+    <p>
+      <b>This snippet shows the top 15 rules based on their lift metric (note the lift column values on the right)</b>
+    </p>
+  </div>
+</div>
+
+The traits Bruiser, FormSwapper, and Cabal all seem to be highly associated with each other no matter which metric is used. 
+
 
 
 
