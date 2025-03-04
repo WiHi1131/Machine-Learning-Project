@@ -10,13 +10,13 @@ Support is a measurement used in ARM, representing how likely it is that an item
 
 Confidence is used to describe rules, and gives the probability that a transaction containing X will also contain Y. Mathematically, it is described as follows: 
 
-confidence(X → Y) = {support(X \cup Y)}/{support(X)}
+confidence(X → Y) = {support(X U Y)}/{support(X)}
 
 If confidence is high, then there is a high likelihood of finding Y where we find X. 
 
 Lift is a measurement, again, describing rules, that measures how much more likely it is that transactions that contain X will contain Y compared to a random transaction in the dataset. Mathematically, it is described as follows: 
 
-lift(X → Y) = {support(X \cup Y)}/{support(X) * support(Y)}
+lift(X → Y) = {support(X U Y)}/{support(X) * support(Y)}
 
 A lift greater than 1 indicates that X and Y appear more often than it would be expected that they would appear together if they had no relation to each other. A lift less than 1 indicates the opposite; that X and Y appear together less often than would be expected. A lift equal to 1 indicates that there is no relationship between X and Y. 
 
@@ -27,6 +27,24 @@ We then use the principle called the Downward Closure Property, that states that
 For each candidate k-itemset, we scan the entire dataset to count the number of transactions containing this set. Any candidate k-itemset that does not meet the arbitrarily defined minimum support threshold is pruned and discarded. For every iteration of the algorithm, k increases by 1. The algorithm stops when no candidates meet the minimum support threshold and no more frequent k-itemsets can be found. 
 
 From each frequent itemset that the algorithm finds, we create rules. For example, if {milk, bread} is frequent, we consider rules such as {milk} → {bread} and {bread} → {milk}, as long as they meet the minimum confidence threshold. 
+
+<div>
+  <img src = "images/transaction_dataset.png" title = "Transaction Dataset" alt = "Transaction Dataset">
+  <div>
+    <p>
+      <b>This image shows an example of a transactional dataset</b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/apriori.png" title = "Apriori Visualization" alt = "Apriori">
+  <div>
+    <p>
+      <b>This is an image detailing the steps of the Apriori algorithm described above.</b>
+    </p>
+  </div>
+</div>
 
 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
