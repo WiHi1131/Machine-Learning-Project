@@ -115,6 +115,21 @@ Below are the resulting plots created after performing K-Means for values of 2,5
 
 Overall, the plots are difficult to interpret, because of the large amount of data (over 10000 points, very densely distributed) and the difficulty of seeing how the centroids correspond to different clusters that may exist. We saw in our silhouette scores that no clusters were very far from each other, and, as we increase the numbers of clusters and centroids, we can observe this to be the case (particularly when K=5 and K=8, some centroids cannot be seen due to how close they are in proximity to other centroids). The K=8 plot gives us the least amount of usable information. We see centroids that may roughly correspond to placement, but many are very close together to the point where placement may not be an appropriate division between clusters. Two centroids appear to be much different and lie on a different plane than the other six, but the color distribution of the data points indicate that one or two placement labels may have data distributed between centroids as opposed to one centroid corresponding to one particular color, which may not be very helpful. The K=5 plot similarly has one centroid that appears to lie on a different plane than the other four. We do see that centroids in this plot appear to be more associated with a specific color/placement value, but there is one centroid which must be so close to another that it cannot be directly seen on the plot. The most helpful plot is likely the simplest for K=2. We see two centroids, one that appears to correspond with lower placement (lighter colored data) and one that lies in a center of darker colors (higher placement). These plots indicate that K-means likely is not that helpful of a clustering algorithm in this case, where lots of data is so densely distributed. 
 
+## Hierarchical Clustering
+
+When performing hierarchical clustering, Ward's linkage method was used in order to minimize the variance within each cluster. To compare with the most useful result from our previous K-Means, 2 clusters were chosen to be chosen by the algorithm. A dendrogram showing the results of the clustering is below
+
+<div>
+  <img src = "images/dendrogram.png" title = "Dendrogram" alt = "Dendrogram">
+  <div>
+    <p>
+      <b>This is the dendrogram produced with hierarchical clustering. Note two clusters, one of smaller size and one of large size. </b>
+    </p>
+  </div>
+</div>
+
+This potentially gives us a clearer picture of what K-means with K=2 showed us. Hierarchical clustering generated two clusters, one small and one quite large. These would need to be related back to original placement labels to determine if these clusters are useful in predicting player placement. 
+
 
 
 
