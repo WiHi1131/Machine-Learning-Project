@@ -62,6 +62,60 @@ All code used can be found here: <a href = "https://github.com/WiHi1131/Machine-
 
 ## K-Means
 
+The Silhouette method, which measures how close clusters are to each other, was used to determine the appropriate values of K to perform K means with. Below is an image detailing the output of the silhouette method: 
+
+<div>
+  <img src = "images/silhouette_output.PNG" title = "Silhouette Output" alt = "Silhouette Output">
+  <div>
+    <p>
+      <b>This is the output from performing the silhouette method on our PCA-reduced data to find optimal values of K. Although we can see that there are no values which have very high scores, values of 2,5, and 8 have the highest.</b>
+    </p>
+  </div>
+</div>
+
+Values of 2, 5, and 8 for K were chosen. Intuitively, the values of 2 and 8 both make sense. Recall that our label attribute is "placement", which is an integer from 1 to 8 detailing the placement a player earned at the time of their elimination (1 means the player scored first place; 8 means the player scored 8th, or last place, in the game). With K=2, hopefully the algorithm would create one cluster containing players who scored in the top four, and another for players who ended the game in the bottom four. With K=8, the goal would be that the algorithm would cluster all players neatly based upon their placement in the game. A K=5 is less interpretable, since this does not divide the number of players in the game evenly, but we will use it since it had a high silhouette score. 
+
+Below are the resulting plots created after performing K-Means for values of 2,5, and 8 for K. Centroids are denoted with a large red X, and data points are mostly transparent so the centroids can be seen, but are colored according to their placement label: 
+
+<div>
+  <img src = "images/silhouette_output.PNG" title = "Silhouette Output" alt = "Silhouette Output">
+  <div>
+    <p>
+      <b>This is the output from performing the silhouette method on our PCA-reduced data to find optimal values of K. Although we can see that there are no values which have very high scores, values of 2,5, and 8 have the highest.</b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/k_means_2.png" title = "K=2 Plot" alt = "K=2 Plot">
+  <div>
+    <p>
+      <b>This is the 3D plot after performing K-means with K=2. Note the centroids denoted by large red X's</b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/k_means_5.png" title = "K=5 Plot" alt = "K=5 Plot">
+  <div>
+    <p>
+      <b>This is the 3D plot after performing K-means with K=5. Note the centroids denoted by large red X's</b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/k_means_8.png" title = "K=8 Plot" alt = "K=8 Plot">
+  <div>
+    <p>
+      <b>This is the 3D plot after performing K-means with K=8. Note the centroids denoted by large red X's</b>
+    </p>
+  </div>
+</div>
+
+Overall, the plots are difficult to interpret, because of the large amount of data (over 10000 points, very densely distributed) and the difficulty of seeing how the centroids correspond to different clusters that may exist. We saw in our silhouette scores that no clusters were very far from each other, and, as we increase the numbers of clusters and centroids, we can observe this to be the case (particularly when K=5 and K=8, some centroids cannot be seen due to how close they are in proximity to other centroids). The K=8 plot gives us the least amount of usable information. We see centroids that may roughly correspond to placement, but many are very close together to the point where placement may not be an appropriate division between clusters. Two centroids appear to be much different and lie on a different plane than the other six, but the color distribution of the data points indicate that one or two placement labels may have data distributed between centroids as opposed to one centroid corresponding to one particular color, which may not be very helpful. The K=5 plot similarly has one centroid that appears to lie on a different plane than the other four. We do see that centroids in this plot appear to be more associated with a specific color/placement value, but there is one centroid which must be so close to another that it cannot be directly seen on the plot. The most helpful plot is likely the simplest for K=2. We see two centroids, one that appears to correspond with lower placement (lighter colored data) and one that lies in a center of darker colors (higher placement). These plots indicate that K-means likely is not that helpful of a clustering algorithm in this case, where lots of data is so densely distributed. 
+
+
 
 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
