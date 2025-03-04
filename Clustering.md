@@ -130,7 +130,24 @@ When performing hierarchical clustering, Ward's linkage method was used in order
 
 This potentially gives us a clearer picture of what K-means with K=2 showed us. Hierarchical clustering generated two clusters, one small and one quite large. These would need to be related back to original placement labels to determine if these clusters are useful in predicting player placement. 
 
+## DBSCAN 
 
+DBSCAN was performed on the data and 5 clusters were found. An image of the data colored by DBSCAN cluster label is shown below: 
+
+<div>
+  <img src = "images/dbscan_plot.png" title = "DBSCAN Plot" alt = "DBSCAN Plot">
+  <div>
+    <p>
+      <b>This is the plot produced by visualizing the PCA-reduced 3D data and labeling according to cluster produced by DBSCAN </b>
+    </p>
+  </div>
+</div>
+
+The image is difficult to decipher, again because of how dense the data is packed together. DBSCAN found 5 clusters, which again is slightly problematic, since 8 players are not neatly divisible by this number. This may mean that some placements of players have very similar metrics regardless of placement, which would be problematic for trying to predict placement. More investigation into relating these clusters back to placement labels would have to be done to find whether the DBSCAN clustering was useful. 
+
+# Conclusions
+
+Overall, the density of the particular dataset used for clustering proved problematic for these algorithms to distinguish identifiable clusters or groups of data with similar characteristics. It may be possible to group players into broad categories using K-Means, such as those that finished in the top 4 vs those that finished in the bottom 4. Because this data signifies all challenger players, or the highest-ranked players to have been playing the game at the time of data collection, it is likely that there are not very identifiable differences in these players' performances, regardless of their final placement in a particular game, and it is likely that their metrics reflect this. Or, it is possible that the metrics chosen are simply not related to player placement in any way that clustering algorithms can identify neatly. Clustering is an excellent way to find more information about unlabeled data; in this case, since we have labeled data, clustering may not be as useful. 
 
 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
