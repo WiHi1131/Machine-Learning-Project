@@ -46,5 +46,9 @@ From each frequent itemset that the algorithm finds, we create rules. For exampl
   </div>
 </div>
 
+# Data Prep
 
+As explained above, transactional data only shows items that were purchased in a single transaction, without including item quantities or any other information. In the case of this project, fortunately the number of active traits used by a player in a particular game can be transformed into transaction data. We can then perform ARM on this data to find if there are any traits that are frequently used together by players. 
+
+Below is a snippet of our trait data transformed into transactional data. 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
