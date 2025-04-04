@@ -8,15 +8,20 @@ Naïve Bayesian algorithms are a method of supervised learning. These algorithms
 
 We use different types of Naïve Bayesian (NB) algorithms depending on the distribution of data we are dealing with, as explained below: 
 
-- Multinomial NB is catered for use with discrete data, such as with trying to classify text documents with word counts [1].
+- **Multinomial NB** is catered for use with discrete data, such as with trying to classify text documents with word counts [1]. 
 - Bernoulli NB is designed to be used with binary or boolean data; multiple features can be used but each is "assumed to be a binary-valued (Bernoulli, boolean) variable" [1].
 - Other types depending on distribution of data, such as Gaussian NB and Categorical NB, as necessary.
 
-### Multinomial NB
+### Multinomial Naïve Bayes
+
+Multinomial Naïve Bayes is designed to be used with features containing counts, such as the text document example above. Bayes' Theorem works within this algorithm to update class probabilities (such as if a text document is spam or not spam) as it sees increasing evidence within the word counts. To elaborate, the Multinomial NB algorithm calculates conditional probabilities of each feature (words in our example) when given the class label to begin. Under the assumption that all features are conditionally independent, the algorithm calculates the probability of seeing all features (word counts) by multiplying them together, and then can predict the class of an unseen data point by finding which class has a higher probability of containing all known feature probabilities in the new data point. 
+
+The below image was taken from medium.com[2] and gives a simplified overview: 
 
 ## Sources
 
 [1] 1.9. Naive Bayes. (n.d.). Scikit-learn. https://scikit-learn.org/stable/modules/naive_bayes.html
+[2] Mocquin, Y. (2024, November 30). Multinomial Naive Bayes Classifier - TDS Archive - Medium. Medium. https://medium.com/data-science/multinomial-naive-bayes-classifier-c861311caff9
 
 
 
