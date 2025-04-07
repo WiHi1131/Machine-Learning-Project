@@ -59,7 +59,33 @@ The image below from Medium.com[4] compares and contrasts the types of data used
 
 ## Data Prep and Code 
 
+### CODE FOR ALL PROCESSES EXPLAINED BELOW CAN BE FOUND HERE: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/code/NB.ipynb">NB CODE</a>
 
+### Multinomial NB
+
+The multinomial NB algorithm would be ideally suited to discover whether the 'counts' of units in certain traits can be used to predict whether a player finished in the top four players in a game or not. To find this, we first need to clean our data so it is suited for the algorithm. 
+
+The below image is a snippet of data we have already prepared, showing trait information, including the number of units (num_units) for each trait fielded by a player in a particular game, along with their placement, which is exactly what we are interested in: 
+
+<div>
+  <img src = "images/pre_cleaned_trait_data.PNG" title = "Pre-cleaned Trait Data" alt = "Pre_cleaned Trait Data">
+  <div>
+    <p>
+      <b>Note the trait_name and num_units columns, along with the placement column</b>
+    </p>
+  </div>
+</div>
+
+To transform this into a format more suitable for Multinomial NB, we need to make each row correspond to a single player in a single match, have every column be a trait, and transform the placement column into containing a '1' if the player finished in the top four, and a '0' if they did not. After performing this in Python (Code linked above), our cleaned data looks like this: 
+
+<div>
+  <img src = "images/cleaned_trait_data.PNG" title = "Cleaned Trait Data" alt = "Cleaned Trait Data">
+  <div>
+    <p>
+      <b>Note that many columns were not included in the image above. We can see counts of number of units for each trait and whether or not the player placed in the top four, marked with a '1' or a '0', respectively</b>
+    </p>
+  </div>
+</div>
 
 ## Sources
 
