@@ -46,7 +46,16 @@ The below image, taken from a youtube video thumbnail from Stanford Online [3], 
 
 In contrast to Multinomial NB, which deals with integer counts, Bernoulli NB deals with binary or boolean data, where there are only two options for values of features (0 or 1, true or false, etc). Bernoulli NB only verifies whether a feature is present or not by checking whether a value of a feature is 1 or 0. 
 
-The image below compares and contrasts the types of data used for Bernoulli NB vs Multinomial NB (and also includes an image of Gaussian NB, not covered on this page): 
+The image below from Medium.com[4] compares and contrasts the types of data used for Bernoulli NB vs Multinomial NB (and also includes an image of Gaussian NB, not covered on this page): 
+
+<div>
+  <img src = "images/bernoulli_vs_multi.png" title = "Bernoulli vs Multi" alt = "Bernoulli vs Multi">
+  <div>
+    <p>
+      <b>This shows the types of data used for different types of NB algorithms</b>
+    </p>
+  </div>
+</div>
 
 
 ## Sources
@@ -56,6 +65,8 @@ The image below compares and contrasts the types of data used for Bernoulli NB v
 [2] Mocquin, Y. (2024, November 30). Multinomial Naive Bayes Classifier - TDS Archive - Medium. Medium. https://medium.com/data-science/multinomial-naive-bayes-classifier-c861311caff9
 
 [3] Stanford Online. (2022, May 31). Bayesian Networks 8 - Smoothing | Stanford CS221: AI (Autumn 2021) [Video]. YouTube. https://www.youtube.com/watch?v=M7rWvN_0xbw
+
+[4] Baladram, S. (2024, November 30). Bernoulli Naive Bayes | TDS Archive. Medium. https://medium.com/data-science/bernoulli-naive-bayes-explained-a-visual-guide-with-code-examples-for-beginners-aec39771ddd6
 
 
 
