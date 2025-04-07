@@ -42,6 +42,13 @@ The below image, taken from a youtube video thumbnail from Stanford Online [3], 
   </div>
 </div>
 
+### Bernoulli Naïve Bayes
+
+In contrast to Multinomial NB, which deals with integer counts, Bernoulli NB deals with binary or boolean data, where there are only two options for values of features (0 or 1, true or false, etc). Bernoulli NB only verifies whether a feature is present or not by checking whether a value of a feature is 1 or 0. 
+
+The image below compares and contrasts the types of data used for Bernoulli NB vs Multinomial NB (and also includes an image of Gaussian NB, not covered on this page): 
+
+
 ## Sources
 
 [1] 1.9. Naive Bayes. (n.d.). Scikit-learn. https://scikit-learn.org/stable/modules/naive_bayes.html
