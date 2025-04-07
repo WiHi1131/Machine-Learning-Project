@@ -31,15 +31,24 @@ The below image was taken from medium.com[2] and gives a simplified overview:
 
 A key piece of Naïve Bayes is additive smoothing, otherwise known as Laplace smoothing or Lidstone smoothing. In our example of a text document with word counts, imagine that one word never appears in the training data for a class (for example, imagine the word "offer" never appears in training documents that are labeled as "not spam"). The algorithm then thinks that the probability estimate for a document containing the word "offer" is 0% that it would be labeled as "not spam", and would always label it as spam when applied to unseen data, which may not be the case. Smoothing fixes this issue by adding a small constant to all word counts. This means that no probability will ever be exactly zero, so the aforementioned problem is avoided. This constant, which we call $\alpha$, can be adjusted depending on how much smoothing the user want to apply. 
 
-The below image, taken from a youtube video thumbnail [3], nicely illustrates how smoothing fixes probabilities of counts so that they will never be 0, even if a particular count is 0: 
+The below image, taken from a youtube video thumbnail from Stanford Online [3], nicely illustrates how smoothing fixes probabilities of counts so that they will never be 0, even if a particular count is 0: 
 
-
+<div>
+  <img src = "images/laplace_smoothing.jpg" title = "Smoothing" alt = "Smoothing">
+  <div>
+    <p>
+      <b>This illustrates how smoothing affects probabilities and counts</b>
+    </p>
+  </div>
+</div>
 
 ## Sources
 
 [1] 1.9. Naive Bayes. (n.d.). Scikit-learn. https://scikit-learn.org/stable/modules/naive_bayes.html
 
 [2] Mocquin, Y. (2024, November 30). Multinomial Naive Bayes Classifier - TDS Archive - Medium. Medium. https://medium.com/data-science/multinomial-naive-bayes-classifier-c861311caff9
+
+[3] Stanford Online. (2022, May 31). Bayesian Networks 8 - Smoothing | Stanford CS221: AI (Autumn 2021) [Video]. YouTube. https://www.youtube.com/watch?v=M7rWvN_0xbw
 
 
 
