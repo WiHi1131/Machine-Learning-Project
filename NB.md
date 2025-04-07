@@ -60,13 +60,13 @@ The image below from Medium.com[4] compares and contrasts the types of data used
 
 ## Sources
 
-[1] 1.9. Naive Bayes. (n.d.). Scikit-learn. https://scikit-learn.org/stable/modules/naive_bayes.html
+- [1] 1.9. Naive Bayes. (n.d.). Scikit-learn. https://scikit-learn.org/stable/modules/naive_bayes.html
 
-[2] Mocquin, Y. (2024, November 30). Multinomial Naive Bayes Classifier - TDS Archive - Medium. Medium. https://medium.com/data-science/multinomial-naive-bayes-classifier-c861311caff9
+- [2] Mocquin, Y. (2024, November 30). Multinomial Naive Bayes Classifier - TDS Archive - Medium. Medium. https://medium.com/data-science/multinomial-naive-bayes-classifier-c861311caff9
 
-[3] Stanford Online. (2022, May 31). Bayesian Networks 8 - Smoothing | Stanford CS221: AI (Autumn 2021) [Video]. YouTube. https://www.youtube.com/watch?v=M7rWvN_0xbw
+- [3] Stanford Online. (2022, May 31). Bayesian Networks 8 - Smoothing | Stanford CS221: AI (Autumn 2021) [Video]. YouTube. https://www.youtube.com/watch?v=M7rWvN_0xbw
 
-[4] Baladram, S. (2024, November 30). Bernoulli Naive Bayes | TDS Archive. Medium. https://medium.com/data-science/bernoulli-naive-bayes-explained-a-visual-guide-with-code-examples-for-beginners-aec39771ddd6
+- [4] Baladram, S. (2024, November 30). Bernoulli Naive Bayes | TDS Archive. Medium. https://medium.com/data-science/bernoulli-naive-bayes-explained-a-visual-guide-with-code-examples-for-beginners-aec39771ddd6
 
 
 
