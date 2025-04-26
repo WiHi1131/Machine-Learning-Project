@@ -65,7 +65,8 @@ The image below from Medium.com[4] compares and contrasts the types of data used
 
 The multinomial NB algorithm would be ideally suited to discover whether the 'counts' of units in certain traits can be used to predict whether a player finished in the top four players in a game or not. To find this, we first need to clean our data so it is suited for the algorithm. 
 
-The below image is a snippet of data we have already prepared, showing trait information, including the number of units (num_units) for each trait fielded by a player in a particular game, along with their placement, which is exactly what we are interested in: 
+The below image is a snippet of data we have already prepared, showing trait information, including the number of units (num_units) for each trait fielded by a player in a particular game, along with their placement, which is exactly what we are interested in. 
+
 
 <div>
   <img src = "images/pre_cleaned_trait_data.PNG" title = "Pre-cleaned Trait Data" alt = "Pre_cleaned Trait Data">
@@ -86,6 +87,26 @@ To transform this into a format more suitable for Multinomial NB, we need to mak
     </p>
   </div>
 </div>
+
+<div>
+  <img src = "images/multinb_training_data.PNG" title = "Training Trait Data" alt = "Training Trait Data">
+  <div>
+    <p>
+      <b>Training Data</b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/multinb_testing_data.PNG" title = "Testing Trait Data" alt = "Testing Trait Data">
+  <div>
+    <p>
+      <b>Testing Data.</b>
+    </p>
+  </div>
+</div>
+
+The model was trained and tested on the datasets from the snippet above within the coding notebook linked above. Results are discussed below. 
 
 ## Sources
 
