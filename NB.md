@@ -108,6 +108,23 @@ To transform this into a format more suitable for Multinomial NB, we need to mak
 
 The model was trained and tested on the datasets from the snippet above within the coding notebook linked above. Results are discussed below. 
 
+## Results and Conclusions
+
+The below image shows the accuracy and confusion matrix from running multinomial NB on our trait data: 
+
+<div>
+  <img src = "images/Multi_NB_CM_Acc.PNG" title = "Multinomial NB Confusion Matrix & Accuracy Score" alt = "Multinomial NB Confusion Matrix & Accuracy Score">
+  <div>
+    <p>
+      <b>Note the accuracy score of approximately 62%, and recall scores of 0.72 for class 0 and 0.52 for class 1.</b>
+    </p>
+  </div>
+</div>
+
+The confusion matrix and scores above give us an accuracy score of approximately 62%. This indicates that trait-counts do give a somewhat predictive outlook on whether a player will place in the top 4, but only at a moderate level - predictions made by multinomial NB should not be trusted outright. The model has a recall score on class 0 of 0.72, which means that the model is better at identifying team compositions that will not place in the top 4 - we can trust the model more if it is telling us that a player's board will not place in the top 4 (also known as "podiuming"), although this still should be taken with a grain of salt, since the model is only accurate at doing this 72% of the time. Note also that the model has a low recall score of 0.52 for class 1. This means that a little less than half the time, the model will not accurately identify whether a player's board will podium. The confusion matrix shows lots of false negatives (501 of them), and is fairly poor at identifying winning boards. This shows that there are many more important factors to consider besides trait counts that influence placement - a more complex model trained on more information, such as items built or interest gained, would likely do better. 
+
+
+
 ## Sources
 
 - [1] 1.9. Naive Bayes. (n.d.). Scikit-learn. https://scikit-learn.org/stable/modules/naive_bayes.html
