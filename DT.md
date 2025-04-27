@@ -18,4 +18,64 @@ To create data suitable for training and testing of three different Decision Tre
 
 These three datasets were combined, cleaned, transformed, and then separated into training and testing sets suitable for each tree. The dataset designed to be used for the first decision tree model was obtained by combining information from the original 1st and 3rd datasets mentioned above. This dataset contains information on gold remaining, the sum of the tiers of all units fielded by a player, and the mean rarity of units fielded by that player (all at time of elimination). This data was divided into training and testing sets in an 80%/20% split, as seen by the images and links below: 
 
+<div>
+  <img src = "images/DT_1_training.PNG" title = "DT 1 Training Data" alt = "DT 1 Training Data">
+  <div>
+    <p>
+      <b>Training Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/DT_1_training_data.csv">Training Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/DT_1_testing.PNG" title = "DT 1 Testing Data" alt = "DT 1 Testing Data">
+  <div>
+    <p>
+      <b>Testing Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/DT_1_testing_data.csv">Testing Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+The dataset to be used for the second DT model is identical to the data used to train our Naive Bayes model (explained <a href = "https://wihi1131.github.io/Machine-Learning-Project/NB">here</a>), and contains data on which traits were fielded by a player in a match at the time of elimination, as well as the number of units corresponding to each trait. Note that this dataset contains information on whether or not a player "podiumed" or not (placed within the top 4 players), instead of exact placement data. This data was also divided with an 80%/20% split for training and testing, respectively. Images of snippets of training and testing datasets, as well as links to full datasets, are below: 
+
+<div>
+  <img src = "images/DT_2_training.PNG" title = "DT 2 Training Data" alt = "DT 2 Training Data">
+  <div>
+    <p>
+      <b>Training Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/DT_2_training_data.csv">Training Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/DT_2_testing.PNG" title = "DT 2 Testing Data" alt = "DT 2 Testing Data">
+  <div>
+    <p>
+      <b>Testing Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/DT_2_testing_data.csv">Testing Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+The final dataset, used for our final DT model, contains binary information on whether or not a particular unit was fielded by a player at the time of their elimination. Again, this data was divided into training and testing sets with an 80%/20% split. Image snippets of training and testing data, as well as links to full datasets, are below: 
+
+<div>
+  <img src = "images/DT_3_training.PNG" title = "DT 3 Training Data" alt = "DT 3 Training Data">
+  <div>
+    <p>
+      <b>Training Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/DT_3_training_data.csv">Training Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/DT_3_testing.PNG" title = "DT 3 Testing Data" alt = "DT 3 Testing Data">
+  <div>
+    <p>
+      <b>Testing Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/DT_3_testing_data.csv">Testing Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+## Results and Conclusions
+
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
