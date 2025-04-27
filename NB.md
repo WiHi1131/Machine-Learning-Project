@@ -92,7 +92,7 @@ To transform this into a format more suitable for Multinomial NB, we need to mak
   <img src = "images/multinb_training_data.PNG" title = "Training Trait Data" alt = "Training Trait Data">
   <div>
     <p>
-      <b>Training Data</b>
+      <b>Training Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/multinb_training_data.csv">Dataset</a></b>
     </p>
   </div>
 </div>
@@ -101,7 +101,7 @@ To transform this into a format more suitable for Multinomial NB, we need to mak
   <img src = "images/multinb_testing_data.PNG" title = "Testing Trait Data" alt = "Testing Trait Data">
   <div>
     <p>
-      <b>Testing Data.</b>
+      <b>Testing Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/multinb_testing_data.csv"></b>
     </p>
   </div>
 </div>
