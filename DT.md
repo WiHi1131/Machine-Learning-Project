@@ -10,6 +10,8 @@ The decision tree is trained on data for which we already have classification la
 
 After training, the model is given new data and bins it according to the features it has and how they correspond to the splitting decisions the tree has already found. This step is done extremely quickly, since no further calculations need to be done, and each new data point can simply flow down the tree until it is binned by a leaf and classified (note that it is also possible to use decision trees to find continuous values). 
 
+## Data Prep and Code
+
 
 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
