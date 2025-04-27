@@ -14,6 +14,8 @@ After training, the model is given new data and bins it according to the feature
 
 ### CODE FOR ALL PROCESSES EXPLAINED BELOW CAN BE FOUND HERE: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/code/DT.ipynb">DT CODE</a>
 
-Data from separat
+To create data suitable for training and testing of three different Decision Tree models, data was prepared from three different datasets. The first dataset contained data on gold remaining for a player in a match at the time of elimination. The second dataset contained information on which traits were fielded and with how many units per trait for a player in a match, and the third dataset contained information on specific units fielded by a player in a match at the time of elimination. 
+
+These three datasets were combined, cleaned, transformed, and then separated into training and testing sets suitable for each tree. The dataset designed to be used for the first decision tree model was obtained by combining information from the original 1st and 3rd datasets mentioned above. This dataset contains information on gold remaining, the sum of the tiers of all units fielded by a player, and the mean rarity of units fielded by that player (all at time of elimination). This data was divided into training and testing sets in an 80%/20% split, as seen by the images and links below: 
 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
