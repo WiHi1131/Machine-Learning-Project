@@ -12,6 +12,8 @@ After training, the model is given new data and bins it according to the feature
 
 ## Data Prep and Code
 
+### CODE FOR ALL PROCESSES EXPLAINED BELOW CAN BE FOUND HERE: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/code/DT.ipynb">DT CODE</a>
 
+Data from separat
 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
