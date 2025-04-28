@@ -78,4 +78,6 @@ The final dataset, used for our final DT model, contains binary information on w
 
 ## Results and Conclusions
 
+Below is a visualization of our first decision tree: 
+
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
