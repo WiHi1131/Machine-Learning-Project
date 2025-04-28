@@ -24,6 +24,8 @@ Logistic regression uses the sigmoid function to transform the linear equation (
 
 After data has been transformed by the inverse logit function, using ordinary least squares to minimize error becomes un-optimal. Therefore, we must use a method called maximum likelihood estimation to find the optimal coefficients and minimize error. This essentially works by choosing coefficients that maximize the probability of getting our observed class labels given that we already observe feature vectors from our data points. Different algorithms that perform numerical optimizations can be used to find the maximum likelihood for this purpose - the key point to remember is that this is the way we find the best possible coefficients for logistic regression [1] [2]. 
 
+## Data Prep and Code
+
 
 ## Sources
 
