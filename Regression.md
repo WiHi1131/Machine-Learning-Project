@@ -53,6 +53,32 @@ Training and testing datasets were prepared with an 80/20 split, as with all oth
 ## Results and Conclusions 
 
 
+The below image shows the accuracy and confusion matrix from running a logistic regression on our trait data: 
+
+<div>
+  <img src = "images/regression_CM.PNG" title = "Regression Confusion Matrix & Accuracy Score" alt = "Regression Confusion Matrix & Accuracy Score">
+  <div>
+    <p>
+      <b>Note the accuracy score of approximately 71%</b>
+    </p>
+  </div>
+</div>
+
+The below image shows other metrics like precision and recall for our model: 
+
+<div>
+  <img src = "images/regression_CR.PNG" title = "Regression Classification Report" alt = "Regression Classification Report">
+  <div>
+    <p>
+      <b>Note our precision and recall scores for each class</b>
+    </p>
+  </div>
+</div>
+
+With an accuracy score of nearly 71%, this was one of the best-performing models of the project. Precision scores for each class are almost identical - when the model says that a score is in the top four or is not, it is correct 7 times out of 10. Recall scores indicate that the model does, however, miss one-third of the true boards that reach the top four. It is more accurate at finding boards that will not reach the top four, indicated by a higher recall score for class 0. 
+
+When we compare our results with the multinomial NB algorithm on the same dataset (found <a href = "https://wihi1131.github.io/Machine-Learning-Project/NB">here</a> in the Results & Conclusions section), we see we have improved our accuracy by almost 9 percentage points (from 62% accuracy to 71%). The logistic regression cuts both false negatives and false positives. This is likely due to the fact that multinomial NB assumes that each trait count is conditionally independent given the class placement, but functionally we are aware that this is not the case, since in TFT certain traits interact with each other more than others. Logistic regression does not make the same independence assumptions and learns weights more optimally, and can handle this trait data better and be more accurate. While the NB algorithm might be easier to interpret, in this case logistic regression performs much better and is the more appropriate model. This is particularly surprising considering that we can predict a top-four placement of a player quite well based solely on what traits they run and how many units of each trait are on their board, considering how much other information is relevant within the game but has not been used in the model (such as gold remaining, unit rarity, and items used). 
+
 
 ## Sources
 
