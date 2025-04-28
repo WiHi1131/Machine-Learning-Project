@@ -88,6 +88,8 @@ To transform this into a format more suitable for Multinomial NB, we need to mak
   </div>
 </div>
 
+The below images show our data after it has been split into a training and a testing set, with 80% of the data being used for training and 20% used for splitting. ***A NOTE ON TRAIN-TEST-SPLIT***: Data is randomly shuffled into the two aforementioned categories. We usually divide into 80% for training and 20% for testing. Especially for large datasets, this is appropriate because the model needs enough data for training to be able to learn patterns, while having a large enough testing set to yield predictions with low variance, but small enough to have enough data for training. However, the split is arbitrarily defined and can be adjusted if needed. For all models in this project, the data will be given a standard 80%/20% split for training and testing data. It is critical that the training and testing sets are disjoint because the model's accuracy must be evaluated on data that it has not seen at all during the training process. Training data that is also used for testing could make performance statistics unreliable. This mimics real world deployment of the model, where it will be given new data that it has never seen before. 
+
 <div>
   <img src = "images/multinb_training_data.PNG" title = "Training Trait Data" alt = "Training Trait Data">
   <div>
