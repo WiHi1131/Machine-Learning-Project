@@ -83,7 +83,7 @@ The final dataset, used for our final DT model, contains binary information on w
 Below is a visualization of our first decision tree: 
 
 <div>
-  <img src = "images/Decision_Tree_1.png" title = "DT 1" alt = "DT 1" width = "600" height = "600">
+  <img src = "images/Decision_Tree_1.png" title = "DT 1" alt = "DT 1" width = "900" height = "400">
   <div>
     <p>
       <b>This decision tree classifies player placement based on the sum of their unit tiers, their mean unit rarity, and their gold remaining. </b>
