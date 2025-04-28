@@ -83,7 +83,7 @@ The final dataset, used for our final DT model, contains binary information on w
 Below is a visualization of our first decision tree: 
 
 <div>
-  <img src = "images/Decision_Tree_1.PNG" title = "DT 1" alt = "DT 1">
+  <img src = "images/Decision_Tree_1.png" title = "DT 1" alt = "DT 1">
   <div>
     <p>
       <b>This decision tree classifies player placement based on the sum of their unit tiers, their mean unit rarity, and their gold remaining. </b>
@@ -111,7 +111,7 @@ With an extremely low accuracy of only 28% on the testing set indicates that our
 Below is a visualization of our second decision tree: 
 
 <div>
-  <img src = "images/Decision_Tree_2.PNG" title = "DT 2" alt = "DT 2">
+  <img src = "images/Decision_Tree_2.png" title = "DT 2" alt = "DT 2">
   <div>
     <p>
       <b>This decision tree classifies player placement based solely on the traits they fielded and the number of units in each trait. Note that this tree only classifies whether players placed in the top 4 or not, and does not try to predict specific placement. </b>
