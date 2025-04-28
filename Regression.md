@@ -26,6 +26,33 @@ After data has been transformed by the inverse logit function, using ordinary le
 
 ## Data Prep and Code
 
+### CODE FOR ALL PROCESSES EXPLAINED BELOW CAN BE FOUND HERE: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/code/Regression.ipynb">REGRESSION CODE</a>
+
+To conduct a logistic regression, we will use the same data we already prepared and used for multinomial NB (found <a href = "https://wihi1131.github.io/Machine-Learning-Project/NB">here</a>), since this is ideally suited for logistic regression, as it has a binary label category (top_four). 
+
+Training and testing datasets were prepared with an 80/20 split, as with all other models. Below are snippets of the training and testing datasets and links to the data used: 
+
+<div>
+  <img src = "images/multinb_training_data.PNG" title = "Regression Training Data" alt = "Regression Training Data">
+  <div>
+    <p>
+      <b>Training Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/regression_training_data.csv">Training Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/multinb_testing_data.PNG" title = "Regression Training Data" alt = "Regression Training Data">
+  <div>
+    <p>
+      <b>Testing Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/regression_training_data.csv">Testing Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+## Results and Conclusions 
+
+
 
 ## Sources
 
