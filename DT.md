@@ -125,10 +125,42 @@ The below image shows our accuracy score for this decision tree as well as the c
   <img src = "images/DT_2_CM.PNG" title = "DT 2 CM" alt = "DT 2 CM">
   <div>
     <p>
-      <b>We see a very low accuracy score along with a confusion matrix. Note the dark colors at the top left hand corner and the bottom right hand corner of the matrix. </b>
+      <b>We see a decent accuracy score along with a simpler confusion matrix </b>
     </p>
   </div>
 </div>
+
+This tree is more complex due to the max leaf nodes being increased to 29 (again, this hyperparameter was adjusted and could not be improved substantially by altering this number). However, note that there are only two classes for this tree's predictions (1 if a player placed in the top four and 0 otherwise). We see the root node shows that the first split is whether or not a team contained the 'BloodHunter' trait, and every subsequent node shows a different trait and/or values for that trait that are important in determining placement. The tree effectively shows which traits synergize well. Bloodhunter is the most important trait towards determining a top-four placement. If Watchers is run, it is also imporant to have Martialists, or else one can likely expect poor performance, for example. 
+
+The accuracy score of almost 67% shows substantial improvement over our first decision tree model. However, 1 out of every three data points are still misclassified by this model. This improvement in performance is likely due largely to the fact that we are only predicting binary performance and not trying to find specific placement, which is a more difficult task. Allowing a larger tree would likely help (at the cost of interpretability), and of course adding richer features may also go a long way to improving accuracy. 
+
+### Decision Tree 2
+
+Below is a visualization of our third and final decision tree: 
+
+<div>
+  <img src = "images/Decision_Tree_3.png" title = "DT 3" alt = "DT 3">
+  <div>
+    <p>
+      <b>This decision tree classifies player placement based only on the units they fielded. This tree, like our first, tries to predict placement. </b>
+    </p>
+  </div>
+</div>
+
+The below image shows our accuracy score for this decision tree as well as the confusion matrix: 
+
+<div>
+  <img src = "images/DT_3_CM.PNG" title = "DT 3 CM" alt = "DT 3 CM">
+  <div>
+    <p>
+      <b>We see a very low accuracy score and a complex confusion matrix. Again note that the darkest colors are either in the top left or the bottom right of the matrix, signifying that the tree is most accurate at predicting either first or last place, but is very inaccurate otherwise. </b>
+    </p>
+  </div>
+</div>
+
+This tree is capped at 8 leaves (again, hyperparameter tuning did not significantly improve accuracy score). Note that many placement classes (3, 5, 6, and 7) do not even have a leaf, and are never predicted by the model. The root node splits at Warwick, indicating that this is the most important unit in terms of predicting placement - boards without Warwick tend to place low. Boards without Warwick and Victor tend to place last overall. A common success pattern appears to be Warwick, Viktor, MissMage and Rumble together, which commonly shows a first place victory. These are valuable insights to predicting first and last place finishes even if the model is extremely weak at predicting any placements in between. 
+
+The accuracy score of the tree overall is about 20%, meaning it is only marginally better than randomly guessing placement, unfortunately. We see the highest recall score and the darkest color in the confusion matrix at the bottom right hand corner (recall of 69% for 8th place), indicating that the tree is best at spotting boards that will place last. Every other placement prediction is likely to be untrue. Adding leaves to the tree, adding more information for the tree to learn from, and adjusting more hyperparameters so the tree can make smarter split decisions could all potentially improve this model. 
 
 
 
