@@ -78,6 +78,60 @@ The final dataset, used for our final DT model, contains binary information on w
 
 ## Results and Conclusions
 
+### Decision Tree 1
+
 Below is a visualization of our first decision tree: 
+
+<div>
+  <img src = "images/Decision_Tree_1.PNG" title = "DT 1" alt = "DT 1">
+  <div>
+    <p>
+      <b>This decision tree classifies player placement based on the sum of their unit tiers, their mean unit rarity, and their gold remaining. </b>
+    </p>
+  </div>
+</div>
+
+The below image shows our accuracy score for this decision tree as well as the confusion matrix: 
+
+<div>
+  <img src = "images/DT_1_CM.PNG" title = "DT 1 CM" alt = "DT 1 CM">
+  <div>
+    <p>
+      <b>We see a very low accuracy score along with a confusion matrix. Note the dark colors at the top left hand corner and the bottom right hand corner of the matrix. </b>
+    </p>
+  </div>
+</div>
+
+Looking at the tree itself, we can see that the largest split (at the root node) shows us that the most important determiner for predicting placement is the sum of unit tiers. The second most important feature is mean unit rarity. Gold remaining only appears to matter on the high-tier side of the tree. 
+
+With an extremely low accuracy of only 28% on the testing set indicates that our tree is very unreliable at predicting player placement from the three metrics of gold remaining, sum of unit tiers, and mean unit rarity. The one silverlining is that recall scores (calculated by dividing the true positive prediction rate by the row total in the confusion matrix) for placements of 1 and 8 are relatively high, being 0.64 and 0.58, respectively. This indicates that the tree does a decent job at predicting if a player will place first or last, but not a good job at predicting how well a player will place in between these classes. Note the tree cannot identify a player that placed 5th correctly at all. The code (linked above) shows that the maximum leaf nodes of this tree were limited to no more than 8 - this was done for simplicity's sake and to limit the tree's complexity (hyperparameter tuning showed that increasing this number did not significantly improve accuracy). Further adjustment of hyperparameters, as well as inclusion of more features, would be good first steps to try and improve accuracy of this decision tree. 
+
+### Decision Tree 2
+
+Below is a visualization of our second decision tree: 
+
+<div>
+  <img src = "images/Decision_Tree_2.PNG" title = "DT 2" alt = "DT 2">
+  <div>
+    <p>
+      <b>This decision tree classifies player placement based solely on the traits they fielded and the number of units in each trait. Note that this tree only classifies whether players placed in the top 4 or not, and does not try to predict specific placement. </b>
+    </p>
+  </div>
+</div>
+
+The below image shows our accuracy score for this decision tree as well as the confusion matrix: 
+
+<div>
+  <img src = "images/DT_2_CM.PNG" title = "DT 2 CM" alt = "DT 2 CM">
+  <div>
+    <p>
+      <b>We see a very low accuracy score along with a confusion matrix. Note the dark colors at the top left hand corner and the bottom right hand corner of the matrix. </b>
+    </p>
+  </div>
+</div>
+
+
+
+
 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
