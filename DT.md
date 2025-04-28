@@ -111,7 +111,7 @@ With an extremely low accuracy of only 28% on the testing set indicates that our
 Below is a visualization of our second decision tree: 
 
 <div>
-  <img src = "images/Decision_Tree_2.png" title = "DT 2" alt = "DT 2">
+  <img src = "images/Decision_Tree_2.png" title = "DT 2" alt = "DT 2" width = "2400" height = "600">
   <div>
     <p>
       <b>This decision tree classifies player placement based solely on the traits they fielded and the number of units in each trait. Note that this tree only classifies whether players placed in the top 4 or not, and does not try to predict specific placement. </b>
@@ -134,12 +134,12 @@ This tree is more complex due to the max leaf nodes being increased to 29 (again
 
 The accuracy score of almost 67% shows substantial improvement over our first decision tree model. However, 1 out of every three data points are still misclassified by this model. This improvement in performance is likely due largely to the fact that we are only predicting binary performance and not trying to find specific placement, which is a more difficult task. Allowing a larger tree would likely help (at the cost of interpretability), and of course adding richer features may also go a long way to improving accuracy. 
 
-### Decision Tree 2
+### Decision Tree 3
 
 Below is a visualization of our third and final decision tree: 
 
 <div>
-  <img src = "images/Decision_Tree_3.png" title = "DT 3" alt = "DT 3">
+  <img src = "images/Decision_Tree_3.png" title = "DT 3" alt = "DT 3" width = "2400" height = "600">
   <div>
     <p>
       <b>This decision tree classifies player placement based only on the units they fielded. This tree, like our first, tries to predict placement. </b>
