@@ -285,7 +285,7 @@ Below are images showing the accuracy, classification report, and confusion matr
 ### Linear Kernel, C = 10
 
 <div>
-  <img src = "images/svm_lin_10_acc.PNG" title = "Linear Kernel, C = 0.1 Accuracy & Classification Report" alt = "Linear Kernel, C = 0.1 Accuracy & Classification Report">
+  <img src = "images/svm_lin_c10_acc.PNG" title = "Linear Kernel, C = 0.1 Accuracy & Classification Report" alt = "Linear Kernel, C = 0.1 Accuracy & Classification Report">
   <div>
     <p>
       <b>The Accuracy and Classification Report of an SVM with a Linear Kernel and C = 0.1.</b>
@@ -302,9 +302,32 @@ Below are images showing the accuracy, classification report, and confusion matr
   </div>
 </div>
 
+### Discussion of Results
 
+Overall, all models were fairly similar in performance, with only a variability of around 3.5% in accuracy from the lowest-performing SVM model to the highest. 
 
+The highest-performing model in terms of accuracy was the polynomial model with C = 1, with an accuracy of 0.723, and a recall score of class 1 0f 0.69, and the second-best performing model was the polynomial model with C = 10, with an accuracy of 0.722 and a class 1 recall score of 0.68. This indicates, that, largely, incorporating interactions of the features with a quadratic model is the most helpful without causing too much overfitting. Increasing C adds some variance, with accuracy being almost identical but with a slightly lower recall score. The polynomial model with C = 0.1 performed the worst out of the three polynomial models, with an accuracy of 0.707, so having C be too small is clearly an issue, and overall a C of 1 seems to be optimal. 
 
+The RBF models performed best-to-worst with C = 1, C = 10, and C = 0.1, with accuracy scores of 0.715, 0.712, and 0.688, respectively. We see that the RBF kernels are able to model the complex structure of the input data, but there are no gains in accuracy over using a quadratic model - the only potential improvement is that class 1 recall is 0.7 for both the RBF kernels with C = 1 and C = 10. This suggests that quadratic features already capture most of the non-linearity of the data. Again, we see that a C too large drops in accuracy very slightly, indicating overfitting, and a C too small falls in accuracy steeply, so again C = 1 seems to be optimal. 
+
+The SVMs using the linear kernel peformed the most consistently across all values of C, each being just under 0.7 in accuracy, and all having the same class 1 recall of 0.65. However, these models also performed poorer than the best models using other kernels. This implies that a linear surface cannot accurately model the interaction structure in trait counts as well as the other kernels can. 
+
+The best-performing SVM models beat out the best-performing model thus far in this project, that being the logistic regression model trained on the same data. Pairwise combinations of traits in a quadratic model are informative in their predictive power to figure out if a player will finish in the top 4 or not. This makes intuitive sense, since many traits in the game automatically go together and are usually fielded on the same boards. 
+
+### Visualization
+
+In an effort to try and visualize the SVM decision boundary from the three best-performing models (mentioned above), principal component analysis was peformed on the dataset (see the <a href = "https://wihi1131.github.io/Machine-Learning-Project/PCA">PCA</a> page for more information on how PCA works) to reduce the data to 2 dimensions. However, considering the original dataset is very wide, with 29 dimensions, it is very difficult to capture all of the necessary information into just 2 dimensions in order to visualize the decision boundary. Each visualization for the top three performing models looked the exact same and performed the same, as seen in the plot below: 
+
+<div>
+  <img src = "images/svm_poly_c1_vis.png" title = "SVM PCA Vis" alt = "SVM PCA Vis">
+  <div>
+    <p>
+      <b>After reducing the 29-dimension dataset into just 2, a line was drawn in an effort to try and visualize the decision boundary between the two classes. However, this does a poor job at showing how the SVM works in such a high-dimensional dataset. Note the very low PCA-space accuracy at the top </b>
+    </p>
+  </div>
+</div>
+
+Visibly, the line does a horrible job at separating these classes. It simply is not possible to visualize the decision boundary in a dataset with 29 dimensions, even though the model itself performs fairly well. Another attempt could be made to show a plane if the data were reduced to 3 dimensions. 
 
 ## Sources
 
