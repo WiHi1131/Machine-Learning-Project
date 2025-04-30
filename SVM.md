@@ -46,7 +46,7 @@ where Φ is an embedding, or a kind of representation learned from the data, and
 
 ### Example of Mapping 2D Points with a Polynomial Kernel
 
-The below images showcase how mapping 2D points into a six-dimensional space works in the case of a polynomial kernel: 
+The example below showcases how mapping 2D points into a six-dimensional space works in the case of a polynomial kernel: 
 
 <div>
   <img src = "images/svm_math_1.PNG" title = "SVM Math image 1" alt = "SVM Math image 1">
@@ -66,7 +66,33 @@ The below images showcase how mapping 2D points into a six-dimensional space wor
   </div>
 </div>
 
+## Data Prep and Code (Data Train-Test-Split Images)
 
+### CODE FOR ALL PROCESSES EXPLAINED BELOW CAN BE FOUND HERE: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/code/SVM.ipynb">SVM CODE</a>
+
+To create a SVM model, we will use the same data we already prepared and used for multinomial NB (found <a href = "https://wihi1131.github.io/Machine-Learning-Project/NB">here</a>) This data is suited for the classification task of trying to predict whether players placed in the top four in a given match or not, based on the traits they included in their team composition and how many units of each trait they ran. 
+
+Training and testing datasets were prepared with an 80/20 split, as with all other models. Below are snippets of the training and testing datasets and links to the data used: 
+
+<div>
+  <img src = "images/multinb_training_data.PNG" title = "Regression Training Data" alt = "Regression Training Data">
+  <div>
+    <p>
+      <b>Training Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/regression_training_data.csv">Training Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/multinb_testing_data.PNG" title = "Regression Testing Data" alt = "Regression Testing Data">
+  <div>
+    <p>
+      <b>Testing Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/regression_testing_data.csv">Testing Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+## Results and Conclusions
 
 ## Sources
 
