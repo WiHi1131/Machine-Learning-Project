@@ -1,5 +1,7 @@
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
 
+# Conclusion
+
 <div>
   <img src = "images/heimerheader.png" title = "Riot Games API Image" alt = "Riot Games API image">
   <div>
