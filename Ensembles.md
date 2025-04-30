@@ -14,7 +14,31 @@ Ensemble methods are particularly useful with limited datasets or for those with
 
 ### CODE FOR ALL PROCESSES EXPLAINED BELOW CAN BE FOUND HERE: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/code/Ensembles.ipynb">ENSEMBLES CODE</a>
 
+Once again, cleaned trait counts data was used for this analysis, as a classification task in order to predict whether whether players placed in the top four participants of a given match or not. 
 
+Training and testing datasets were prepared with an 80/20 split, as with all other models. Below are snippets of the training and testing datasets and links to the data used: 
+
+<div>
+  <img src = "images/ensemble_training_data.PNG" title = "Ensemble Training Data" alt = "Ensemble Training Data">
+  <div>
+    <p>
+      <b>Training Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/_training_data.csv">Training Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/ensemble_testing_data.PNG" title = "Ensemble Testing Data" alt = "Ensemble Testing Data">
+  <div>
+    <p>
+      <b>Testing Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/ensemble_testing_data.csv">Testing Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+A ***Random Forest Classifier*** was then decided as the ensemble method to try on this dataset, fitting considerably since a decision tree was already fit to the dataset, providing an avenue for direct comparison. 
+
+## Results and Discussion
 
 
 
