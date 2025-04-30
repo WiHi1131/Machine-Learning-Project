@@ -10,12 +10,12 @@ Support Vector Machines (SVMs for short) are a type of supervised algorithm that
 
 The decision function for the hyperplane is given by: 
 
-f(x)=sign(w^⊤x+b)
+f(x)=sign(w^⊤x+b) [1]
 
-Where w is the weight vector, x is an input vector of data points, and b is the bias, or error term. This is clearly a linear equation (reminiscent of y = mx + b). The image below illustrates a hyperplane separating two classes of data. Note the equation of the hyperplane on the image: 
+Where w is the weight vector, x is an input vector of data points, and b is the bias, or error term. This is clearly a linear equation (reminiscent of y = mx + b). The image below illustrates a hyperplane separating two classes of data: 
 
 <div>
-  <img src = "images/SVM_margin_pic.PNG" title = "SVM Margin" alt = "SVM margin">
+  <img src = "images/SVM_margin_pic_2.PNG" title = "SVM Margin" alt = "SVM margin">
   <div>
     <p>
       <b>This is an example of a the margin hyperplane for an SVM model [1]. </b>
@@ -25,9 +25,56 @@ Where w is the weight vector, x is an input vector of data points, and b is the 
 
 Even if the data isn't linearly separable, SVMs transform the data into a space where a flat, straight hyperplane will work to separate the data linearly. This is done using the kernel trick, described below. 
 
+### The Kernel Trick and the Importance of the Dot Product
+
+A kernel is a function that is used to arrange and transform data and aids the SVM algorithm in its function to bin data. They project the original data onto a space with more dimensions, such that a hyperplane can separate them where it wouldn't have been able to before [2]. 
+
+A kernel function is defined as: 
+
+k(x, z) = Φ(x) · Φ(z) [3]
+
+where Φ is an embedding, or a kind of representation learned from the data, and x and z are two input data points. This is what allows the transformation of the lower-dimensional data into a higher dimensional feature space. Note that the above equation is defined as a dot product of two vectors. This works as intended because the kernel transformation is done using inner products of training vectors, and not using the vectors themselves. In other words, the dot product of x and z is done first, and then the kernel function is applied to said dot product. This means we never have to compute Φ(x) or Φ(z) directly, which is important because the embedding Φ can lie in extremely high dimensions. When we apply the kernel function to an inner product, which is a scalar value, this makes something that would be wildly expensive (in tems of computational resources) feasible, but still able to deliver the same mathematical results. The hyperplane in this new kernel space will still become a linear separator, even if the data is not linearly separable in the original feature space of the data. The below image shows a visual representation of how a 2D kernel with non-linearly separable data can be transformed into a higher-dimensional (3D) space so that a hyperplane can separate the data: 
+
+<div>
+  <img src = "images/kernel_transformation.png" title = "Kernel Transformation" alt = "Kernel Transformation">
+  <div>
+    <p>
+      <b>This image shows how the kernel trick works for SVMs [2]. </b>
+    </p>
+  </div>
+</div>
+
+### Example of Mapping 2D Points with a Polynomial Kernel
+
+The below images showcase how mapping 2D points into a six-dimensional space works in the case of a polynomial kernel: 
+
+<div>
+  <img src = "images/svm_math_1.PNG" title = "SVM Math image 1" alt = "SVM Math image 1">
+  <div>
+    <p>
+      <b></b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/svm_math_2.PNG" title = "SVM Math image 2" alt = "SVM Math image 2">
+  <div>
+    <p>
+      <b></b>
+    </p>
+  </div>
+</div>
+
+
+
 ## Sources
 
--[1]: Wikipedia contributors. (2025, April 28). Support vector machine. Wikipedia. https://en.wikipedia.org/wiki/Support_vector_machine#/media/File:SVM_margin.png
+-[1]: Lecture 9: SVM. (n.d.). https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote09.html
+
+-[2]: Jain, A. (2024, November 16). SVM kernels and its type - Abhishek Jain - Medium. Medium. https://medium.com/@abhishekjainindore24/svm-kernels-and-its-type-dfc3d5f2dcd8
+
+-[3]: Kernel Methods. (n.d.-b). https://cseweb.ucsd.edu/~dasgupta/250B/kernel-handout.pdf
 
 
 <a href = "https://wihi1131.github.io/Machine-Learning-Project/">Home</a>
