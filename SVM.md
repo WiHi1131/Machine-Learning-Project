@@ -98,6 +98,23 @@ Training and testing datasets were prepared with an 80/20 split, as with all oth
 
 Data was scaled using a standard scaler before applying the SVM model. Images of the scaled data are below: 
 
+<div>
+  <img src = "images/svm_scaled_training_data.PNG" title = "Scaled SVM Training Data" alt = "Scaled SVM Training Data">
+  <div>
+    <p>
+      <b>Training Data Scaled using sklearn's StandardScaler. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/svm_scaled_training_data.csv">Scaled Training Dataset</a></b>
+    </p>
+  </div>
+</div>
+
+<div>
+  <img src = "images/svm_scaled_testing_data.PNG" title = "Scaled SVM Testing Data" alt = "Scaled SVM Testing Data">
+  <div>
+    <p>
+      <b>Testing Data Scaled using sklearn's StandardScaler. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/svm_scaled_testing_data.csv">Scaled Testing Dataset</a></b>
+    </p>
+  </div>
+</div>
 
 ## Sources
 
