@@ -234,7 +234,7 @@ Below are images showing the accuracy, classification report, and confusion matr
 </div>
 
 <div>
-  <img src = "images/svm_rbf_c1_cm.png" title = "RBF Kernel, C = 10 Confusion Matrix" alt = "RBF Kernel, C = 10 Confusion Matrix">
+  <img src = "images/svm_rbf_c10_cm.png" title = "RBF Kernel, C = 10 Confusion Matrix" alt = "RBF Kernel, C = 10 Confusion Matrix">
   <div>
     <p>
       <b>The Confusion Matrix of an SVM with an RBF Kernel and C = 10.</b>
@@ -265,7 +265,7 @@ Below are images showing the accuracy, classification report, and confusion matr
 ### Linear Kernel, C = 1
 
 <div>
-  <img src = "images/svm_lin_c0.1_acc.PNG" title = "Linear Kernel, C = 0.1 Accuracy & Classification Report" alt = "Linear Kernel, C = 0.1 Accuracy & Classification Report">
+  <img src = "images/svm_lin_c1_acc.PNG" title = "Linear Kernel, C = 0.1 Accuracy & Classification Report" alt = "Linear Kernel, C = 0.1 Accuracy & Classification Report">
   <div>
     <p>
       <b>The Accuracy and Classification Report of an SVM with a Linear Kernel and C = 0.1.</b>
@@ -285,7 +285,7 @@ Below are images showing the accuracy, classification report, and confusion matr
 ### Linear Kernel, C = 10
 
 <div>
-  <img src = "images/svm_lin_c0.1_acc.PNG" title = "Linear Kernel, C = 0.1 Accuracy & Classification Report" alt = "Linear Kernel, C = 0.1 Accuracy & Classification Report">
+  <img src = "images/svm_lin_10_acc.PNG" title = "Linear Kernel, C = 0.1 Accuracy & Classification Report" alt = "Linear Kernel, C = 0.1 Accuracy & Classification Report">
   <div>
     <p>
       <b>The Accuracy and Classification Report of an SVM with a Linear Kernel and C = 0.1.</b>
