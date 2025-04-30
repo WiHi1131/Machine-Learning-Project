@@ -14,12 +14,14 @@
 
 <a href="https://wihi1131.github.io/Machine-Learning-Project/ARM">ARM</a>
 
+<a href="https://wihi1131.github.io/Machine-Learning-Project/NB">NB</a>
+
 <a href="https://wihi1131.github.io/Machine-Learning-Project/DT">DT</a>
 
-<a href="https://wihi1131.github.io/Machine-Learning-Project/NB">NB</a>
+<a href="https://wihi1131.github.io/Machine-Learning-Project/Regression">Regression</a>
 
 <a href="https://wihi1131.github.io/Machine-Learning-Project/SVM">SVM</a>
 
-<a href="https://wihi1131.github.io/Machine-Learning-Project/Regression">Regression</a>
+<a href="https://wihi1131.github.io/Machine-Learning-Project/Ensembles">Ensembles</a>
 
 <a href="https://wihi1131.github.io/Machine-Learning-Project/Conclusions">Conclusions</a>
