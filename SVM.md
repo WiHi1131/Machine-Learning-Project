@@ -116,6 +116,14 @@ Data was scaled using a standard scaler before applying the SVM model. Images of
   </div>
 </div>
 
+### Kernels Used and Model Results: Accuracies and Confusion Matricies
+
+In total, 9 SVM models were created. Three models were created with a polynomial kernel, three with an RBF (Radial Basis Function) kernel, and three with a linear kernel. For each kernel, C, the regularization parameter, was altered between 0.1, 1, and 10. For the polymomial kernel, degree was kept at 2 (so all polymomial models were quadratic), and the coefficient parameter was kept at 1. For the polymomial and rbf kernels, the 'gamma' parameter, another kernel coefficient, was kept as 'scale' (details for each model can be found in the link to the coding notebook above). 
+
+Below are images showing the accuracy, classification report, and confusion matrix for each of the 9 models: 
+
+
+
 ## Sources
 
 -[1]: Lecture 9: SVM. (n.d.). https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote09.html
