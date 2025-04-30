@@ -319,7 +319,7 @@ The best-performing SVM models beat out the best-performing model thus far in th
 In an effort to try and visualize the SVM decision boundary from the three best-performing models (mentioned above), principal component analysis was peformed on the dataset (see the <a href = "https://wihi1131.github.io/Machine-Learning-Project/PCA">PCA</a> page for more information on how PCA works) to reduce the data to 2 dimensions. However, considering the original dataset is very wide, with 29 dimensions, it is very difficult to capture all of the necessary information into just 2 dimensions in order to visualize the decision boundary. Each visualization for the top three performing models looked the exact same and performed the same, as seen in the plot below: 
 
 <div>
-  <img src = "images/svm_poly_c1_vis.png" title = "SVM PCA Vis" alt = "SVM PCA Vis">
+  <img src = "images/svm_poly_c1_vis.PNG" title = "SVM PCA Vis" alt = "SVM PCA Vis">
   <div>
     <p>
       <b>After reducing the 29-dimension dataset into just 2, a line was drawn in an effort to try and visualize the decision boundary between the two classes. However, this does a poor job at showing how the SVM works in such a high-dimensional dataset. Note the very low PCA-space accuracy at the top </b>
