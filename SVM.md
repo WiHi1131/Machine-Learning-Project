@@ -78,7 +78,7 @@ Training and testing datasets were prepared with an 80/20 split, as with all oth
   <img src = "images/multinb_training_data.PNG" title = "Regression Training Data" alt = "Regression Training Data">
   <div>
     <p>
-      <b>Training Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/regression_training_data.csv">Training Dataset</a></b>
+      <b>Training Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/svm_training_data.csv">Training Dataset</a></b>
     </p>
   </div>
 </div>
@@ -87,12 +87,17 @@ Training and testing datasets were prepared with an 80/20 split, as with all oth
   <img src = "images/multinb_testing_data.PNG" title = "Regression Testing Data" alt = "Regression Testing Data">
   <div>
     <p>
-      <b>Testing Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/regression_testing_data.csv">Testing Dataset</a></b>
+      <b>Testing Data. Full Dataset can be found here: <a href = "https://github.com/WiHi1131/Machine-Learning-Project/blob/main/data/svm_testing_data.csv">Testing Dataset</a></b>
     </p>
   </div>
 </div>
 
 ## Results and Conclusions
+
+### Data Scaling
+
+Data was scaled using a standard scaler before applying the SVM model. Images of the scaled data are below: 
+
 
 ## Sources
 
